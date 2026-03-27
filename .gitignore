@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+label_env/
+
+# IDE
+.idea/
+
+# Model weights & training outputs
+runs/
+*.pt
+*.onnx
+
+# Image/video data
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.mp4
+*.avi
+*.mkv
+*.mov
+
+# Health bar data
+health_bar_module/health_bar_data/
+health_bar_module/health_bar_training/
+health_bar_module/health_bar_photos/
+health_bar_module/recording_health/
+
+# Hit number detection data
+hit_number_detection/crnn_data/
+hit_number_detection/datasets/
+hit_number_detection/detection_review/
+hit_number_detection/frames_filtered/
+hit_number_detection/frames_raw/
+hit_number_detection/game_recording/
+hit_number_detection/valid-yolo-data/
+hit_number_detection/yolo_diagnosis/
+hit_number_detection/yolo-data/
+
+# Monster detection data
+monster_detection/monster_detect/monster_yolo_data/
+monster_detection/game_recording/
+monster_detection/bot/
+monster_detection/target_photo/
+monster_detection/monster_detect/problem/
+
+# Farming bot templates/routes
+farming_bot/*/recorded_route/
+farming_bot/*/templates/
+farming_bot/prepare_mission/pic/
+
+# Other
+Gauge/gauge photo/
+Gauge/problem/
+Gauge/test_photo/
+Sharpness/photo/
+nul
+.claude/

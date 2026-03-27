@@ -1,0 +1,17 @@
+# MH Wilds 伤害数字检测 — YOLOv10 数据集配置
+#
+# 注意: YOLO 训练数据和 CRNN 训练数据不同！
+#   - YOLO 数据 (valid-yolo-data/): 包含所有可辨识的伤害数字位置，
+#     即使数字被部分遮挡无法读出具体值，只要能看出是数字就标注。
+#     用途: 训练 YOLO 检测数字位置。
+#   - CRNN 数据 (crnn_data/): 只包含能清晰辨认具体数字值的裁剪图。
+#     用途: 训练 CRNN 识别数字内容。
+
+path: valid-yolo-data  # 审查后的干净数据集
+train: images/train
+val: images/valid
+test: images/test
+
+# 类别（单类别：伤害数字）
+names:
+  0: damage_number
